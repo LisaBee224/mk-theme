@@ -135,16 +135,16 @@
 
   .header-logo:has(.header-logo__image-container--inverse) .header-logo__image-container--original {
     display: var(--header-logo-display, block);
-    &.breakout {
-      position: absolute;
-      left: 0px;
-      height: 100%;
-    }
   }
 
   .header-logo__image-container--inverse {
     display: var(--header-logo-inverse-display, none);
   }
+    .breakout {
+      position: absolute;
+      left: 0px;
+      height: 100%;
+    }
 {% endstylesheet %}
 
 {% schema %}
