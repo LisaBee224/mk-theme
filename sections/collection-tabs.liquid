@@ -1,0 +1,67 @@
+{% if section.blocks.size > 0 %}
+  {% assign current_request = request.path %}
+    <div id="tabs" class="tabs">
+        <ul class="tabs-list">
+            {% for block in section.blocks %}
+                {%  assign collection = collections[block.settings.collection] %}
+                <li>
+                  {%  assign custom_class= '' %}
+                    {% if current_request == collection.url %}
+                      {%  assign custom_class= 'active' %}
+                    {% endif %}
+                    <a href="{{ block.settings.collection.url }}" class="collection-button {{ custom_class }}">{{ collection.title }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+{% endif %}
+{% schema %}
+    {
+        "name": "Tabs",
+        "settings": [
+            {
+                "type": "text",
+                "id": "title",
+                "label": "Title"
+            },
+        ],
+        "blocks": [
+            {
+                "type": "tab",
+                "name": "Tab",
+                "limit": 15,
+                "settings": [ 
+                    {
+                        "type": "collection",
+                        "id": "collection",
+                        "label": "collection"
+                    },
+                ]
+            }
+        ],
+        "presets": [
+            {
+                "name": "Collection Tabs",
+                "blocks" :[],
+        
+                "category": "collections"
+            }
+        ]
+    }
+{% endschema %}
+
+<style>
+  #tabs {
+    display: flex;
+    justify-content: center;
+  }
+  .tabs-list {
+    display: flex;
+    column-gap: 2.5rem;
+    list-style: none;
+  }
+  .active {
+    text-decoration: underline;
+  }
+</style>
