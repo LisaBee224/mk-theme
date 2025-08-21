@@ -627,7 +627,7 @@
     "cart_total": "Cart total",
     "cart_type": "Type",
     "auto_open_cart_drawer": "\"Add to cart\" auto-opens drawer",
-    "show_empty_cart_image": "Display brand image in empty cart",
+    "emptycartimage": "Display brand image in empty cart",
     "case": "Case",
     "checkout_buttons": "Accelerated checkout buttons",
     "collection": "Collection",
