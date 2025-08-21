@@ -44,6 +44,7 @@
     assign logo_width_mobile = block.settings.custom_height_mobile | times: settings.logo.aspect_ratio | ceil
     assign inverse_logo_width = block.settings.custom_height | times: inverse_logo.aspect_ratio | ceil
     assign inverse_logo_width_mobile = block.settings.custom_height_mobile | times: inverse_logo.aspect_ratio | ceil
+    assign logo_brokenout = block.settings.break_out
     assign logo_style = '--header-logo-image-width: ' | append: logo_width | append: 'px;' | append: '--header-logo-image-width-mobile: ' | append: logo_width_mobile | append: 'px; --header-logo-image-height: ' | append: block.settings.custom_height | append: 'px; --header-logo-image-height-mobile: ' | append: block.settings.custom_height_mobile | append: 'px;'
     assign inverse_logo_style = '--header-logo-image-width: ' | append: inverse_logo_width | append: 'px;' | append: '--header-logo-image-width-mobile: ' | append: inverse_logo_width_mobile | append: 'px; --header-logo-image-height: ' | append: block.settings.custom_height | append: 'px; --header-logo-image-height-mobile: ' | append: block.settings.custom_height_mobile | append: 'px;'
   %}
@@ -54,7 +55,7 @@
   >
     {% render 'image',
       image: settings.logo,
-      class: 'header-logo__image',
+      class: 'header-logo__image' | append: ' ' | append: logo_brokenout ? 'breakout',
       height: block.settings.custom_height,
       text_fallback: shop.name,
       style: logo_style
@@ -166,22 +167,22 @@
       "type": "range",
       "id": "custom_height",
       "label": "t:settings.desktop_height",
-      "min": 12,
-      "max": 100,
-      "step": 1,
+      "min": 100,
+      "max": 500,
+      "step": 100,
       "unit": "px",
-      "default": 20,
+      "default": 100,
       "visible_if": "{{ settings.logo != blank }}"
     },
     {
       "type": "range",
       "id": "custom_height_mobile",
       "label": "t:settings.mobile_height",
-      "min": 12,
-      "max": 100,
-      "step": 1,
+      "min": 100,
+      "max": 500,
+      "step": 100,
       "unit": "px",
-      "default": 20,
+      "default": 100,
       "visible_if": "{{ settings.logo != blank }}"
     },
     {
@@ -227,7 +228,13 @@
       "step": 1,
       "unit": "px",
       "default": 0
+    },
+    {
+      "type": "checkbox",
+      "id": "break_out",
+      "label": "t:settings.breakout",
+      "default": false
     }
-  ]
+  ] 
 }
 {% endschema %}
