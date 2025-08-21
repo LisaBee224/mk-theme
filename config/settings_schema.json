@@ -1799,6 +1799,12 @@
         "label": "t:settings.checkout_buttons",
         "info": "t:info.checkout_buttons",
         "default": true
+      },
+      {
+        "type": "checkbox",
+        "id":"show_empty_cart_image",
+        "label": "t:settings.emptycartimage",
+        "default": false
       }
     ]
   },
