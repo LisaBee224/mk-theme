@@ -45,7 +45,7 @@
     assign inverse_logo_width = block.settings.custom_height | times: inverse_logo.aspect_ratio | ceil
     assign inverse_logo_width_mobile = block.settings.custom_height_mobile | times: inverse_logo.aspect_ratio | ceil
     assign logo_brokenout = ""
-    if block.settings.breakout 
+    if block.settings.break_out 
       assign logo_brokenout='breakout' 
     endif 
     assign logo_style = '--header-logo-image-width: ' | append: logo_width | append: 'px;' | append: '--header-logo-image-width-mobile: ' | append: logo_width_mobile | append: 'px; --header-logo-image-height: ' | append: block.settings.custom_height | append: 'px; --header-logo-image-height-mobile: ' | append: block.settings.custom_height_mobile | append: 'px;'
