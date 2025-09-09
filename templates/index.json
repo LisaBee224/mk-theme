@@ -235,7 +235,7 @@
         "collection": "greeting-cards",
         "layout_type": "grid",
         "carousel_on_mobile": false,
-        "max_products": 16,
+        "max_products": 50,
         "columns": 3,
         "mobile_columns": "2",
         "columns_gap": 100,
