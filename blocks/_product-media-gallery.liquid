@@ -331,12 +331,15 @@
         </ul>
       </dialog>
     </zoom-dialog>
-  {% if product.metafields.custom.art_print.value %}
-      <a href="{{ product.metafields.custom.art_print.value.url }}" class="associated-product">also available as an <span>art print</span></a>
-    {% endif %}
-    {% if product.metafields.custom.greeting_card.value %}
-      <a href="{{ product.metafields.custom.greeting_card.value.url }}" class="associated-product">also available as a <span>greeting card</span></a>
-    {% endif %}
+    <div class='connected-product-info'>
+    {% if product.metafields.custom.art_print.value %}
+      
+        <a href="{{ product.metafields.custom.art_print.value.url }}" class="associated-product">also available as an <span>art print</span></a>
+      {% endif %}
+      {% if product.metafields.custom.greeting_card.value %}
+        <a href="{{ product.metafields.custom.greeting_card.value.url }}" class="associated-product">also available as a <span>greeting card</span></a>
+      {% endif %}
+  </div>
 
   {%- endif -%}
 
