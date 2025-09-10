@@ -49,10 +49,10 @@
               "type": "_product-list-text",
               "name": "t:names.collection_title",
               "settings": {
-                "text": "<p>{{ closest.collection.title }}</p>{{ closest.collection.description }}",
-                "width": "fit-content",
+                "text": "<p>{{ closest.collection.title }}</p><p>{{ closest.collection.description }}</p>",
+                "width": "100%",
                 "max_width": "normal",
-                "alignment": "left",
+                "alignment": "center",
                 "type_preset": "h4",
                 "font": "var(--font-body--family)",
                 "font_size": "1rem",
