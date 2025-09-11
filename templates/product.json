@@ -243,9 +243,9 @@
               "name": "t:names.button",
               "settings": {
                 "label": "back to cards",
-                "link": "shopify://collections/frontpage",
+                "link": "shopify://collections/greeting-cards",
                 "open_in_new_tab": false,
-                "style_class": "button-secondary",
+                "style_class": "link",
                 "width": "custom",
                 "custom_width": 100,
                 "width_mobile": "custom",
