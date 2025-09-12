@@ -143,7 +143,7 @@
   },
   "names": {
     "product_title": "Product title",
-    "product_grid_callout": "Product Grid Callout",
+    "product_callout": "Product Callout",
     "custom_liquid": "Custom liquid",
     "404": "404",
     "accelerated_checkout": "Accelerated checkout",
