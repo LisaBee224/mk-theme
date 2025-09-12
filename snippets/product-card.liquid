@@ -89,8 +89,12 @@
     "
     ref="productCardLink"
   >
+    <div class="outer-wrapper">
+      <div class="inner-wrapper">
     {{ children }}
+      </div>
     <p class="print-callout">{{ product.metafields.custom.plp_callout }}</p>
+    </div>
   </a>
 </product-card>
 {%- if settings.transition_to_main_product -%}
