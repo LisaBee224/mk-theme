@@ -90,13 +90,12 @@
     ref="productCardLink"
   >
     {{ children }}
+    <p class="print-callout">{{ product.metafields.custom.plp_callout }}</p>
   </a>
 </product-card>
 {%- if settings.transition_to_main_product -%}
   </product-card-link>
 {%- endif -%}
-
-<p class="print-callout">{{ product.metafields.custom.plp_callout }}</p>
 
 {% stylesheet %}
   product-card-link {
