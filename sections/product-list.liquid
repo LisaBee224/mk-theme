@@ -800,7 +800,14 @@
                     "product_swatches_padding_left": 0,
                     "product_swatches_padding_right": 0
                   }
-                }
+                },
+                "callout": {
+                  "type": "product-grid-callout",
+                  "name": "t:names.product_grid_callout",
+                  "settings": {
+                    "product": "{{ closest.product }}"
+                  }
+                },
               },
               "block_order": ["product_title", "price", "swatches"]
             }
