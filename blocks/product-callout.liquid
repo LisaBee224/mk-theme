@@ -1,4 +1,4 @@
-<p>hi</p>
+<p>{{ product.metafields.custom.plp_callout }}</p>
 
 {% schema %}
 {
@@ -9,6 +9,26 @@
           "id": "product",
           "label": "t:settings.product"
         },
+        {
+          "type": "header",
+          "content": "t:content.field"
+        },
+        {
+          "type": "select",
+          "id": "dynamic_option",
+          "label": "Select an option",
+          "options": [
+            {
+              "value": "{{ product.metafields.custom.plp_callout }}", "label": "plp callout"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "default_text",
+          "label": "Default",
+          "default": "''",
+        }
     ],
     "presets": [
     {
