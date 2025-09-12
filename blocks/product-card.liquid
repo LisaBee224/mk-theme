@@ -201,9 +201,16 @@
               "settings": {
                 "product": "{{ closest.product }}"
               }
-            }
+            },
+            "callout": {
+                  "type": "product-grid-callout",
+                  "name": "t:names.product_grid_callout",
+                  "settings": {
+                    "product": "{{ closest.product }}"
+                  }
+                },
           },
-          "block_order": ["product_title", "price"]
+          "block_order": ["product_title", "price", "callout"]
         }
       },
       "block_order": ["product-card-gallery", "group"]
