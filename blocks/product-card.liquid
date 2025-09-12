@@ -41,9 +41,6 @@
     {
       "type": "product-title"
     },
-    {
-      "type": "product-callout"
-    }
   ],
   "tag": null,
   "settings": [
@@ -205,14 +202,8 @@
                 "product": "{{ closest.product }}"
               }
             },
-            "product_callout": {
-              "type": "product-callout",
-              "settings": {
-                "product": "{{ closest.product }}",
-              }
-            },
           },
-          "block_order": ["product_title", "price", "product_callout"]
+          "block_order": ["product_title", "price"]
         }
       },
       "block_order": ["product-card-gallery", "group"]
