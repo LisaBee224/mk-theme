@@ -248,7 +248,7 @@
         "carousel_on_mobile": false,
         "max_products": 50,
         "columns": 3,
-        "mobile_columns": "2",
+        "mobile_columns": "1",
         "columns_gap": 100,
         "rows_gap": 50,
         "icons_style": "arrow",
