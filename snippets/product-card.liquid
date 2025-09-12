@@ -59,7 +59,6 @@
   data-product-transition="{{ settings.transition_to_main_product }}"
   {{ block.shopify_attributes }}
 >
-  <p>{{ product.metafields.custom.plp_callout }}</p>
   <a
     id="{{ product_card_id | md5 }}"
     {% unless onboarding %}
@@ -96,6 +95,8 @@
 {%- if settings.transition_to_main_product -%}
   </product-card-link>
 {%- endif -%}
+
+<p class="print-callout">{{ product.metafields.custom.plp_callout }}</p>
 
 {% stylesheet %}
   product-card-link {
