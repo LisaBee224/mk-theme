@@ -470,14 +470,6 @@
                   },
                   "blocks": {}
                 },
-                "custom_liquid_CHBEYU": {
-                  "type": "custom-liquid",
-                  "name": "t:names.custom_liquid",
-                  "settings": {
-                    "custom_liquid": "{{ product.metafields.custom.plp_callout }}"
-                  },
-                  "blocks": {}
-                },
                 "swatches_GrWMdL": {
                   "type": "swatches",
                   "name": "t:names.swatches",
@@ -497,7 +489,6 @@
               "block_order": [
                 "product_title_fEBzfr",
                 "price_aiVmeL",
-                "custom_liquid_CHBEYU",
                 "swatches_GrWMdL"
               ]
             }
