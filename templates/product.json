@@ -238,18 +238,24 @@
               },
               "blocks": {}
             },
-            "button_AQ8yGP": {
-              "type": "button",
-              "name": "t:names.button",
+            "menu_Vmq6EG": {
+              "type": "menu",
+              "name": "t:names.menu",
               "settings": {
-                "label": "back to cards",
-                "link": "shopify://collections/greeting-cards",
-                "open_in_new_tab": false,
-                "style_class": "link",
-                "width": "custom",
-                "custom_width": 100,
-                "width_mobile": "custom",
-                "custom_width_mobile": 100
+                "menu": "product-menu",
+                "heading": "",
+                "menu_spacing": 12,
+                "show_as_accordion": false,
+                "accordion_icon": "caret",
+                "accordion_dividers": false,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "heading_preset": "h3",
+                "link_preset": "",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
               },
               "blocks": {}
             }
@@ -259,7 +265,7 @@
             "variant_picker_R3rGDr",
             "buy_buttons_eYQEYi",
             "text_aEtTtq",
-            "button_AQ8yGP"
+            "menu_Vmq6EG"
           ]
         }
       },
